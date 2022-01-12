@@ -1,0 +1,50 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.parentdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin-top: 50px;
+  width: 300px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.submit_text {
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.update_text {
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.count_span {
+  margin: 20px;
+}
