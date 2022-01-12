@@ -1,6 +1,7 @@
 import express from "express"
 import { DB_URL } from "./config/index.js"
 import router from "./routes/index.js"
+import path from "path"
 import bodyParser from "body-parser"
 import mongoose from "mongoose"
 import { errorHandler } from "./middlewares/errorHandler.js"
