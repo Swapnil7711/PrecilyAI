@@ -3,7 +3,7 @@ import { DB_URL } from "./config/index.js"
 import router from "./routes/index.js"
 import bodyParser from "body-parser"
 import mongoose from "mongoose"
-import { errorHandler } from "../middlewares/errorHandler"
+import { errorHandler } from "./middlewares/errorHandler.js"
 import cors from "cors"
 const app = express();
 
