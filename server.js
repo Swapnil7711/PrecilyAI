@@ -1,5 +1,5 @@
 import express from "express"
-import { DB_URL } from "./config/index.js"
+// import { DB_URL } from "./config/index.js"
 import router from "./routes/index.js"
 import path from "path"
 import bodyParser from "body-parser"
@@ -8,7 +8,7 @@ import { errorHandler } from "./middlewares/errorHandler.js"
 import cors from "cors"
 const app = express();
 
-mongoose.connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
